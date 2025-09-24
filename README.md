@@ -1,122 +1,63 @@
-# 🌐 Bridie Maugham Dibora – Personal Portfolio Website
+# Final Web Development Project - Portfolio Website
 
-Welcome to my portfolio! This site was created as part of the **PLP Academy Portfolio Challenge – July 2025 Hackathon** 🚀. It showcases my skills in digital marketing, content strategy, and front-end development, along with featured projects and contact options for collaboration.
+## 📌 Overview
+This is my final project for the **PLP Web Technologies Course (July 2025)**.  
+It is a modern, responsive **portfolio website** developed with **HTML, CSS, and JavaScript**, created to showcase my background, skills, and professional services.  
 
----
-
-## 👤 About Me
-
-Hi, I'm **Bridie Maugham Dibora**, a Digital Marketer with a background in IT. I hold a **Bachelor’s Degree in Business and Information Technology** from **KCA University**. With experience working in both corporate communications and software development environments, I merge creative storytelling with data-driven strategy to build effective digital solutions.
-
-This portfolio is not just a presentation of my capabilities—it’s a live example of how I bring together design, strategy, and interactivity to connect with real users.
+The website highlights clean UI/UX design, responsive layouts for all devices, and interactive JavaScript functionality.
 
 ---
 
-## 📁 Project Structure
-
-WEBSITE PORTFOLIO/
-├── index.html
-├── style.css
-├── images/
-│ ├── profile.jpg
-│ ├── project1.jpg
-│ └── project2.jpg
-├── scripts/ 
-└── README.md
-
-yaml
-Copy
-Edit
+## 🛠️ Technologies Used
+- **HTML5** – page structure and content  
+- **CSS3** – styling, layouts, responsiveness  
+- **JavaScript (ES6)** – interactivity and dynamic effects  
+- **Git & GitHub** – version control and deployment  
 
 ---
 
-## 🛠️ Built With
-
-- **HTML5**
-- **CSS3** (Custom properties, animation effects, 3D flip cards, responsive design)
-- **Git & GitHub** (version control)
-- **Visual Studio Code**
-
----
-
-## 🎯 Features
-
-- **About Me** – An extended, engaging bio.
-- **Interactive Timeline** – Showcases my education with clickable CV download.
-- **3D Project Cards** – Two featured project cards with flipping animations.
-- **Skills Section** – Animated progress bars for HTML, CSS, JavaScript, and Python.
-- **Interests Section** – Highlights my tech and marketing passions.
-- **Floating Contact Button** – Opens an interactive contact form.
-- **Modern Styling** – Bold black/blue/white color palette for strong visual impact.
-- **Responsive Design** – Works across devices.
+## 📂 Project Structure
+index.html → Home page
+about.html → About Me page
+services.html → Services page
+style.css → Main stylesheet
+main.js → JavaScript functionality
+images/ → Images and assets
+Bridie_CV.pdf → Downloadable CV
+README.md → Documentation
 
 ---
 
-## 🚀 Featured Projects
-
-### 📅 Content Calendar App  
-A web-based monthly planner for content creators. Plan what to post, where, what captions to use, suggested CTAs, and even audio suggestions. Perfect for freelancers and influencers.
-
-### 🤝 Creator Collaboration Hub  
-A platform that connects content creators to brands and peers. Encourages meaningful collaboration, sponsorship opportunities, and knowledge exchange in the creator economy.
-
----
-
-## 🎓 Education
-
-- **Bachelor of Business and Information Technology**  
-  KCA University – Nairobi, Kenya  
-  *Download my CV directly from the timeline section.*
+## ✨ Features
+- 📱 **Responsive Design** – Mobile-first and cross-device friendly  
+- 🧭 **Navigation** – Easy switching between Home, About, and Services  
+- ⚡ **JavaScript Interactivity** – Enhances UI with dynamic features  
+- 📂 **CV Download** – Users can download my professional resume directly  
+- 🎨 **Modern Layout** – Clean, minimal, and professional look  
 
 ---
 
-## 💡 Interests
+## 🚀 How to Run
+1. Clone the repository:
 
-- Back-End Development  
-- Database Management  
-- Mobile App Development  
-- Managing Marketing Campaigns  
-- Social Media Strategy  
-- Tech for Storytelling
+   git clone https://github.com/BrieMaugham/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+Open index.html in your browser.
 
----
+Navigate using the menu to access About and Services pages.
 
-## 📬 Contact
+📈 Future Improvements
+Add a Contact Form with validation and backend integration
 
-Have a project or collaboration in mind? I’d love to chat!
+Create a Projects Section to showcase past work
 
-- 📧 Email: maughamdiborapr@gmail.com  
-- 📞 Phone: +254 701 170131  
-- 🌍 Location: Nairobi, Kenya  
-- 🗨️ Contact Form available on the site
+Enhance animations with libraries like AOS.js or GSAP
 
----
+Host a live demo via GitHub Pages
 
-## 🧠 How to Use This Project
+👩‍💻 Author
+Bridie Maugham Dibora
+Digital Marketer & Web Developer
 
-> This website is meant to be hosted using GitHub Pages or any static host (like Netlify).
-
-To run locally:
-
-```bash
-git clone https://github.com/BrieMaugham/portfolio-website.git
-cd portfolio-website
-open index.html
-✅ Challenge Details
-PLP Academy Portfolio Challenge - July 2025
-
-Start Date: July 30th, 2025, 12:00 PM EAT
-
-End Date: August 3rd, 2025, 12:00 PM EAT
-
-Award Ceremony: August 8th, 2025, 5:00 PM EAT
-
-🏁 Status
-✅ Fully coded and committed to GitHub
-
-⚠️ GitHub Pages deployment pending / optional (can be done via gh-pages branch or Netlify)
-
-💡 Available for walkthrough demos or video presentation
-
-🙌 Acknowledgments
-Huge thanks to PLP Academy, the Hackathon Team, and my support network for pushing me to showcase my full potential. Special shoutout to everyone who reviewed, critiqued, and cheered me on during this challenge!
+📜 License
+This project is part of the PLP Web Technologies July 2025 Final Project.
+Free to use for learning and reference.
