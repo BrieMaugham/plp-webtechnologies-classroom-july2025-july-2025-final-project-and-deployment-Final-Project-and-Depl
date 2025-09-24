@@ -1,0 +1,359 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTIES
+\*-----------------------------------*/
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --white_a10: hsla(0, 0%, 100%, 0.10);
+  --blue: hsla(214, 100%, 59%, 1);
+  --light-blue: hsla(214, 100%, 69%, 1);
+  --black: hsla(216, 15%, 12%, 1);
+  --dark-gray: hsla(216, 14%, 20%, 1);
+  --gray: hsla(220, 10%, 40%, 1);
+
+  --ff: 'Monotype corsiva', sans-serif;
+
+  --fs-title: 3rem;
+  --fs-subtitle: 2rem;
+  --fs-body: 1.6rem;
+
+  --fw-700: 700;
+
+  --transition: 0.3s ease;
+  --radius-6: 6px;
+  --radius-pill: 100px;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff);
+  background-color: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+  font-size: var(--fs-body);
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+section {
+  padding: 60px 20px;
+}
+
+/*-----------------------------------*\
+  #HEADERS
+\*-----------------------------------*/
+h1, h2, h3 {
+  color: var(--white);
+}
+h1 {
+  font-size: var(--fs-title);
+}
+h2 {
+  font-size: var(--fs-subtitle);
+  margin-bottom: 1rem;
+}
+
+/*-----------------------------------*\
+  #HEADER SECTION
+\*-----------------------------------*/
+header {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: var(--dark-gray);
+}
+header h1 {
+  color: var(--light-blue);
+}
+.btn-talk {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.7rem 2rem;
+  border-radius: var(--radius-pill);
+  margin-top: 1.5rem;
+  transition: var(--transition);
+}
+.btn-talk:hover {
+  background-color: var(--light-blue);
+}
+
+/*-----------------------------------*\
+  #ABOUT SECTION
+\*-----------------------------------*/
+#about {
+  background-color: var(--black);
+  text-align: center;
+}
+#about .profile-pic-container {
+  margin-top: 2rem;
+}
+#about img {
+  width: 500px;
+  border-radius: 10%;
+  border: 3px solid var(--blue);
+}
+
+/*-----------------------------------*\
+  #EDUCATION TIMELINE
+\*-----------------------------------*/
+#education {
+  background-color: var(--dark-gray);
+}
+.timeline-item {
+  border-left: 4px solid var(--blue);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background-color: var(--blue);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.btn-cv {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-6);
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
+#skills {
+  background-color: var(--black);
+}
+.skill-bar p {
+  margin: 1rem 0 0.3rem;
+}
+.bar {
+  background-color: var(--white_a10);
+  height: 10px;
+  border-radius: var(--radius-pill);
+}
+.fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background-color: var(--blue);
+  animation: grow 2s ease forwards;
+}
+.fill.html { width: 90%; }
+.fill.css { width: 85%; }
+.fill.js { width: 75%; }
+.fill.python { width: 80%; }
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+/*-----------------------------------*\
+  #PROJECTS
+\*-----------------------------------*/
+#projects {
+  background-color: var(--dark-gray);
+  text-align: left;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: var(--radius-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/*-----------------------------------*\
+  #CONTACT
+\*-----------------------------------*/
+#contact {
+  background-color: var(--black);
+  text-align: center;
+}
+#contact form {
+  margin-top: 2rem;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--dark-gray);
+  border-radius: var(--radius-6);
+  color: var(--white);
+  border: 1px solid var(--blue);
+}
+#contact button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.7rem 2rem;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+}
+#contact button:hover {
+  background-color: var(--light-blue);
+}
+
+/*-----------------------------------*\
+  #FLOATING CONTACT BUTTON + MODAL
+\*-----------------------------------*/
+#contact-float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--blue);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  z-index: 1000;
+}
+#contact-modal.hidden {
+  display: none;
+}
+#contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.contact-form {
+  background-color: var(--dark-gray);
+  padding: 2rem;
+  border-radius: var(--radius-6);
+  color: var(--white);
+  width: 300px;
+  position: relative;
+}
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--black);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+.contact-form button {
+  width: 100%;
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.7rem;
+  border-radius: var(--radius-pill);
+}
+#close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--dark-gray);
+  color: var(--gray);
+  font-size: 1.4rem;
+}
+#interests {
+  padding: 4rem 2rem;
+  background-color: var(--charcoal);
+  color: var(--white);
+  text-align: center;
+}
+
+#interests h2 {
+  font-size: var(--fs-1);
+  margin-bottom: 2rem;
+  color: var(--blue-light);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.interest-card {
+  background-color: var(--gunmetal);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: var(--fs-3);
+  font-weight: bold;
+  color: var(--white);
+}
+
+.interest-card:hover {
+  background-color: var(--blue);
+  transform: translateY(-5px);
+  color: var(--white);
+}

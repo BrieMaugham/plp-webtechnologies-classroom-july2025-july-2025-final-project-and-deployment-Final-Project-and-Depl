@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bridie Maugham Dibora | Digital Marketer & Strategist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Floating Contact Button -->
+  <button id="contact-float-btn">📬 Contact</button>
+
+  <!-- Contact Form Modal -->
+  <div id="contact-modal" class="hidden">
+    <div class="contact-form">
+      <span id="close-modal">&times;</span>
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Bridie Maugham Dibora</h1>
+    <p>Digital Marketer & IT Strategist</p>
+    <a href="#contact" class="btn-talk">Let's Talk</a>
+  </header>
+
+  <!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="profile-pic-container">
+    <img src="images/profile.jpg" alt="Bridie Maugham Dibora Profile Picture">
+  </div>
+ <p>
+  Hello! I'm Bridie Maugham Dibora, a digital marketer and content strategist with a strong foundation in Information Technology. My work lives at the intersection of creativity, technology, and storytelling. I’ve had the privilege of supporting government institutions, tech firms, and individual creators—helping each one craft their voice, refine their message, and reach their audience with impact. Whether I’m designing content calendars, analyzing campaign data, or managing digital platforms, I approach every project with intention and a deep understanding of both people and platforms. I believe in marketing that’s not just smart—but human. With my background in Business and IT from KCA University, I bring a hybrid perspective to every challenge, blending analytics with aesthetics, code with creativity, and strategy with soul. When I’m not developing systems or storytelling through digital, I’m collaborating with creators to build authentic, valuable experiences online. I’m passionate about branding, community building, and using technology to turn ideas into action.
+</p>
+</section>
+
+
+  <!-- Education Timeline -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>KCA University</h3>
+        <p>Bachelor’s Degree in Business & Information Technology</p>
+        <a href="Bridie_CV.pdf" download class="btn-cv">📄 Download My CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <p>HTML</p>
+      <div class="bar"><div class="fill html"></div></div>
+      <p>CSS</p>
+      <div class="bar"><div class="fill css"></div></div>
+      <p>JavaScript</p>
+      <div class="bar"><div class="fill js"></div></div>
+      <p>Python</p>
+      <div class="bar"><div class="fill python"></div></div>
+    </div>
+  </section>
+
+<section id="interests">
+  <h2>Professional Interests</h2>
+  <div class="interests-grid">
+    <div class="interest-card">Back-End Development</div>
+    <div class="interest-card">Database Management</div>
+    <div class="interest-card">Mobile App Development</div>
+    <div class="interest-card">Managing Marketing Campaigns</div>
+    <div class="interest-card">Data Analytics & Visualization</div>
+    <div class="interest-card">Content Strategy & SEO</div>
+    <div class="interest-card">User-Centric Product Design</div>
+  </div>
+</section>
+
+  <!-- Projects with 3D Card Flip -->
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <!-- Project 1 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/content-calendar.jpg" alt="Content Calendar App Preview">
+        </div>
+        <div class="card-back">
+          <p>
+            A content calendar app that helps creators plan monthly posts, captions, CTAs, and even recommend background sounds.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/collab-platform.jpg" alt="Creator Collaboration Platform Preview">
+        </div>
+        <div class="card-back">
+          <p>
+            A collaboration platform where creators connect with brands and peers to build, share, and grow through partnerships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Ready to work together or collaborate? Drop me a message!</p>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Bridie Maugham Dibora. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Modal Contact Toggle
+    const contactBtn = document.getElementById('contact-float-btn');
+    const contactModal = document.getElementById('contact-modal');
+    const closeModal = document.getElementById('close-modal');
+
+    contactBtn.onclick = () => contactModal.classList.remove('hidden');
+    closeModal.onclick = () => contactModal.classList.add('hidden');
+    window.onclick = (e) => {
+      if (e.target === contactModal) {
+        contactModal.classList.add('hidden');
+      }
+    };
+  </script>
+
+</body>
+</html>
